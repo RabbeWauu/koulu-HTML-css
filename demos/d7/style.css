@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    flex: right;
+    border:#077070 2px solid;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin: 0 auto;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.perustiedot div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+h1{
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+}
+
+.header i{
+    text-align: center;        
+}
+
+form{
+    max-width: 500px;
+}
+
+#perustiedot{
+    text-align: left;
+    color: #077070;
+    font-size: 18px;
+}
+
+.perustiedot p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.perustiedot label, input{
+    font-family: 'Open Sans', sans-serif;
+    margin: 5px;
+}
+
+.perustiedot label, input{
+    align-items: center;
+}
+

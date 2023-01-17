@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="https://tredu-form-app.herokuapp.com/luelomake.php" method="post">
+    <div class="header">
+        <h1>Lomake</h1>
+        <i>* pakollinen tieto</i>
+    </div>
+    <div class="perustiedot">
+        <b><p id="perustiedot">Perustiedot</p></b>
+            <div class="fname">
+                <label for="fname" required>Etunimi *</label>
+                <input type="text" name="fname" id="fname" required placeholder="Matti">
+            </div>
+            <div class="lname">
+                <label for="lname" required>Sukunimi *</label>
+                <input type="text" name="lname" id="lname" required placeholder="Meikäläinen">
+            </div>
+            <div class="year">
+                <label for="year">Syntymävuosi</label>
+                <select name="year" id="year"></select>
+            </div>
+            <div class="color">
+                <label for="color">Lempiväri</label>    
+                <input type="color" name="color" id="color">
+            </div> 
+    </div>
+
+        <hr>
+
+        <p>Kielitaito</p>
+        <label>Äidinkieli</label>
+        <div>
+            <input type="radio" name="lang" id="finnish" value="finnish">
+            <label for="finnish">Suomi</label>
+            <input type="radio" name="lang" id="english" value="english">
+            <label for="english">Englanti</label>
+            <input type="radio" name="lang" id="swedish" value="swedish">
+            <label for="swedish">Ruotsi</label>
+            <input type="radio" name="lang" id="other" value="other">
+            <label for="other">Muu</label>
+        </div>
+
+        <label>Muu kielitaito</label>
+        <div>
+            <input type="checkbox" name="suomi" value="suomi" id="muusuomi">
+            <label for="muusuomi">suomi</label>
+            <input type="checkbox" name="ruotsi" value="ruotsi" id="muuruotsi">
+            <label for="muuruotsi">ruotsi</label>
+            <input type="checkbox" name="englanti" value="englanti" id="muuenglanti">
+            <label for="muuenglanti">englanti</label>
+            <input type="checkbox" name="saksa" value="saksa" id="muusaksa">
+            <label for="muusaksa">saksa</label>
+            <input type="checkbox" name="venäjä" value="venäjä"id="muuvenäjä">
+            <label for="muuvenäjä">venäjä</label>
+            <input type="checkbox" name="ranska" value="ranska" id="muuranska">
+            <label for="muuranska">ranska</label>
+        </div>
+
+        <hr>
+        <p>Päivämäärä ja asia</p>
+        <label for="date">Päivä</label>
+        <input type="date" name="date" id="date">
+        <br>
+        <label for="message"></label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Kirjoita viesti tähän"></textarea>
+        <hr>
+        <p>Kirjautumistiedot</p>
+
+        <label for="email">Sähköposti</label>
+        <input type="email" name="email" id="email" placeholder="matti.meikalainen@mail.fi">
+
+        <label for="password">Salasana</label>
+        <input type="password" name="password" id="password" placeholder="Salasana">
+        
+        <input type="submit" value="Lähetä">
+    
+    </form>
+    <script>
+        const ageinput = document.getElementById('year')
+        let options = ''
+        for(let year = 1996; year <= 2004; year++){
+          options+= `<option value="${year}">${year}</option>`
+        }
+        ageinput.innerHTML = options;
+  </script>
+</body>
+</html>

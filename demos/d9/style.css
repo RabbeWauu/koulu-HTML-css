@@ -1,0 +1,75 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+nav{
+    background-color: black;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    margin: 0 1em 0 0;
+    height: 100%;
+    display: flex;list-style-type: none;
+    gap: 1em;
+    justify-content: flex-end;
+}
+nav span svg{
+    color: white;
+    height: 40px;
+    margin-right: 0.5em;
+}
+h1{
+    font-size: 2em;
+}
+nav a{color: white;}
+main{
+    max-width: 950px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    grid-template-areas: 'section aside';
+    min-height: 90vh;
+}
+section, aside{
+    margin-top: 100px;
+    background-size: contain;
+}
+aside{
+    grid-area: aside;
+    background-image: url('img/laptop_ad.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+    max-width: 100vw;
+    max-height: 660px;
+    height: 100%;
+}
+aside a{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+@media only screen and (max-width: 900px){
+    aside{
+        background-image: url('img/tablet_ad.jpg');
+        height: 100%;
+    }
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px;
+        grid-template-areas: 'aside' 'section';
+    }
+}
+@media only screen and (max-width: 600px){
+    aside{
+        background-image: url('img/mobilead.jpg');
+        height: 100%;
+    }
+}

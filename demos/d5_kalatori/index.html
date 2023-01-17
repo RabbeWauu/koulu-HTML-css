@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="hinnasto.css">
+    <link rel="stylesheet" href="markkinat.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="sijainti.css">
+    <link rel="stylesheet" href="yhteys.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Kalatori</title>
+    <link rel="shortcut icon" href="img/kalatori_ico.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <a href="#kalatori" class="logo">
+        <img src="img/kalatori_blue.svg" alt="Logo">
+    </a>
+
+    <input type="checkbox" id="menu_box">
+    <label for="menu_box" class="burger"></label>
+
+    <ul>
+        <li><a href="#kalatori">Kalatori</a></li>
+        <li><a href="#markkinat">Markkinat</a></li>
+        <li><a href="#hinnasto">Hinnasto</a></li>
+        <li><a href="#yhteys">Yhteys</a></li>
+        <li><a href="#sijainti">Sijainti</a></li>
+    </ul>
+    </nav>
+    <header id="kalatori">
+        <div class="bg-color">
+        <h1>Kalatori</h1>
+        <p>
+            Kalatori on kalastajalle mahdollisuus myydä saaliinsa tuoreena suoraan vähittäisasiakkaille. 
+            Se sijaitsee ihanteellisessa paikassa aivan vanhan Pirkkalankylän keskustassa.   
+            <br><p>Torilla pidetään markkinapäiviä ja olemme saaneet torille vakituisen asiakaskunnan.
+            Julkinen liikenne suosii toria, sijainti on nimen mukaisesti kalasataman vieressä 
+            ja linja-autopysäkki on 50 metrin päässä.
+        </p>
+        </p>
+    </div></header>
+    <main>
+        <section id="markkinat"><h2>Vuoden 2023 markkinat</h2>
+            <div class="content">
+            <br>
+            <div class="row">
+                <div class="column">
+                    <del><li>Kevätmarkkinat lauantai 11.4.<br>klo 7-16</li></del>
+                    <li>Juhannusmarkkinat tiistai 16.6.<br>klo 7-15</li>
+                    <li>Elomarkkinat tiistai 17.8. klo 7-15</li>
+                    <li>Syysmarkkinat tiistai 13.10.</li>
+                    <li>Joulumarkkinat tiistai 15.12.</li>
+                </div>
+                <div class="column">
+                    <p>
+                        Talvikauden markkinoiden aikataulut<br>tarkentuvat
+                        myöhemmin syksyn<br>aikana.
+                    </p>
+                </div>
+              </div>
+            <br>
+            <div class="images">
+                <img src="img/mustekala.jpg" alt="Octopus">
+                <img src="img/kala.jpg" alt="Fish">
+                <img src="img/rapu.jpg" alt="Crab">
+            </div>
+        </div>
+        </section>
+        <section id="hinnasto"><div class="split_three">
+            <div>
+                <img src="img/tori.jpg" alt="tori" class="map-img"><br>
+                <figcaption>Myyntipöydät on aseteltu kahteen riviin</figcaption>
+            </div>
+            <div>
+                <table>
+                    <tr>    <th>Tunnus</th>     <th>Ala m²</th>     <th>Hinta €</th>    <th>Varaus</th>     </tr>
+                    <tr>    <td>A1</td>         <td>15</td>         <td>60</td>         <td>VAPAA</td>      </tr>
+                    <tr>    <td>A2</td>         <td>15</td>         <td>60</td>         <td>VAPAA</td>      </tr>
+                    <tr>    <td>A3</td>         <td>15</td>         <td>60</td>         <td>VAPAA</td>      </tr>
+                    <tr>    <td>A4</td>         <td>15</td>         <td>60</td>         <td>VAPAA</td>      </tr>
+                    <tr>    <td>A5</td>         <td>15</td>         <td>60</td>         <td>VAPAA</td>      </tr>
+                    <tr>    <td>B1</td>         <td>8</td>          <td>40</td>         <td>VAPAA</td>      </tr>
+    <tr class="varattu">    <td>B2</td>         <td>8</td>          <td>40</td>         <td>VARATTU</td>    </tr>
+    <tr class="varattu">    <td>B3</td>         <td>8</td>          <td>40</td>         <td>VARATTU</td>    </tr>
+    <tr class="varattu">    <td>B4</td>         <td>8</td>          <td>40</td>         <td>VARATTU</td>    </tr>
+    <tr class="varattu">    <td>B5</td>         <td>8</td>          <td>40</td>         <td>VARATTU</td>    </tr>
+                    <tr>    <td>B6</td>         <td>8</td>          <td>40</td>         <td>VAPAA</td>      </tr>
+                    <tr>    <td>B7</td>         <td>8</td>          <td>40</td>         <td>VAPAA</td>      </tr>
+                    <tr>    <td>B8</td>         <td>8</td>          <td>40</td>         <td>VAPAA</td>      </tr>
+                    <tr>    <td>B9</td>         <td>8</td>          <td>40</td>         <td>VAPAA</td>      </tr>
+                    <tr>    <td>B10</td>         <td>8</td>         <td>40</td>         <td>VAPAA</td>      </tr>
+                </table>
+            </div>
+    </div>
+        </section>
+        <section id="yhteys">
+            <form action="https://tredu-form-app.herokuapp.com/lomakedemo.php" method="post">
+                <h3>Toripöydän varaus</h3>
+                <p>Toripäivä</p>
+                    <input type="date" name="date" id="date" required>
+                <p>Pöydän tunnus</p>
+                    <input type="text" name="tableid" id="table" required placeholder="esim-A1">
+                <p>Varaajan nimi</p>
+                    <input type="text" name="fullname" id="fullname" required placeholder="Etunimi Sukunimi">
+                <p>Sähköposti</p>
+                    <input type="email" name="email" id="email" required placeholder="etu.sukunimi@mail.com">
+                <p>Viesti</p>
+                <input type="text" name="message" id="message" placeholder="Valinnainen viesti">
+                <br><br>
+                <input type="submit" value="Lähetä">
+            </form>
+        </section></section>
+        <section id="sijainti"><div id="wrapper">
+            <h3>Sijainti</h3>    
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237.98758252379454!2d23.792568544057367!3d61.497975418597605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468edf57c18dfff3%3A0x70126d60ed795fe!2sTampereen%20Kotikeskus%20LKV!5e0!3m2!1sfi!2sfi!4v1662112229710!5m2!1sfi!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+        </section>
+    </main>
+<footer>
+            <div class="contact">
+            <img src="img/kalatori_white.svg"
+            alt="kalatori_logo"
+            class="footer_logo">
+        
+            <span><br><b>Kalatori</b><br>Kierikantie&nbsp;18<br>33980&nbsp;Pirkkala</span>
+            <span>
+                <a href="mailto:kalatori@mail.fi">kalatori@mail.fi</a><br>
+                <a href="tel:+3581231234">+358&nbsp;123&nbsp;1234</a>
+            </span>
+            <div>
+                <img src="img/flogo-white.png" alt="facebook">
+                <img src="img/in-white-48px-r.png" alt="linkedin">
+                <img src="img/twitter.png" alt="twitter">
+           </div>
+        </div>
+            <span>Kalatori &copy; 2022</span>
+</footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Signup</title>
+</head>
+<body>
+<main>
+        <h1>Luo tili palveluun</h1>
+        <form action="https://tredu-form-app.herokuapp.com/palvelu.php" method="post">
+            <label for="username">Käyttäjänimi</label>
+            <input type="text" name="username" id="username">
+            <label for="password">Salasana</label>
+            <input type="password" name="password" id="password">
+            <label for="repeatpassword">Vahvista salasana</label>
+            <input type="password" name="repeatpassword" id="repeatpassword">
+            <input type="hidden" name="mode" value="signup">
+            <button type="submit">Luo tili</button>
+        </form>
+        <a href="index.html">Kirjaudu sisään</a>
+</main>
+</body>
+</html>

@@ -1,0 +1,99 @@
+:root{
+    --nav-height: 50px;
+    --nav_bg_color: white;
+    --nav_hover_color: #ccc;
+    --nav_item_width: auto;
+}
+
+body{
+    background-color: #111;
+    margin: 0;
+    color: white;
+}
+
+p{
+    max-width: 400px;
+    margin-top: var(--nav_height);
+}
+
+.logo{
+    padding: 0 1em;
+    float: left;
+}
+
+.logo img{
+    height: 48px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--nav_height);
+    background-color: var(--nav_bg_color);
+}
+
+nav ul{
+    width: fit-content;
+    list-style-type: none;
+    margin: 0 0 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left;
+    width: var(--nav_item_width);
+}
+
+nav ul li a, .burger{
+    padding: 16px 25px;
+    box-sizing: border-box;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    height: var(--nav_height);
+}
+#menu_box{
+    display: none;
+}
+.burger{
+    cursor: pointer;
+    float: right;
+    font-size: 2em;
+    line-height: 0.6em;
+    display: none;
+    margin: left;
+    text-align: right;
+}
+@media screen and (max-width: 800px){
+    .burger{
+        display: block;
+    }
+    .burger::before{
+        content: '\2261';
+    }
+    nav ul{
+        display: none;
+        clear: both;
+        margin-right: 0;
+        background-color: inherit;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+    nav ul li{
+        float: none;
+        display: block;
+    }
+    nav ul li a{
+        text-align: left;
+        width: var(nav_item_width);
+    }
+    .logo{
+        margin-left: 0;
+    }
+    #menu_box:checked ~ ul{
+        display: block;
+    }
+}

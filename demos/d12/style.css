@@ -1,0 +1,97 @@
+:root{
+    --menu_bg: #222;
+    --menu_hover_bg: #333;
+    --editor_bg: #444;
+    --focus: orange;
+    --topnav_height: 32px;
+    --nav_text_color: white;
+    --sub_nav_txt_color: #222;
+  }
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: var(--editor_bg);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1.1em;
+}
+/* all navs */
+a, a:visited{
+    color: var(--sub_nav_txt_color);
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: var(--nav_text_color);
+}
+/* toolbar */
+#tools{
+    width: 50px;
+    display: block;
+    background-color: var(--menu_bg);
+    margin-top: var(--topnav_height);
+    position: fixed;
+    height: calc(100vh - var(--topnav_height));
+}
+#tools ul li label i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+#tools ul li label i:hover{
+    cursor: pointer;
+    background-color: var(--menu_hover_bg);
+    border: solid thin #444 !important;
+}
+
+/* toolbar pseudos */
+[id^="tool"]{
+    display: none;
+}
+[id^="tool"]:checked ~ label i{
+    color: var(--focus)
+}
+#topnav{
+    position: fixed;
+    width: 100%;
+    height: var(--topnav_height);
+    background-color: var(--menu_bg);
+}
+#topnav ul li{
+    position: relative;
+}
+#topnav ul li label:not(ul li ul *){
+    padding: 0.25em 1em;
+}
+#topnav ul li label:hover{
+    cursor: pointer;
+    background-color: var(--menu_hover_bg);
+}
+#topnav ul li ul{
+    display: none;
+    position: absolute;
+}
+[id^="drop"]:checked ~ ul{
+    display: block !important;
+    position: absolute;
+}
+#topnav ul li ul li *{
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 0.5em 1em 0.5em 0.5em;
+}
+.logo{
+    margin-right: 2em;
+}

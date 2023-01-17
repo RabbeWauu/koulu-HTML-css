@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Käyttöliittymä online-editorille</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="editor.js"></script>
+</head>
+<body>
+    <nav id="topnav">
+        <ul>
+            <li class="logo"><i class="fa fa-home" aria-hidden="true" title="Home"></i></li>
+            <li>
+                <label for="drop-1" class="toggle">File</label>
+                <input type="radio" name="topmenu" id="drop-1">
+                <ul>
+                    <li>
+                        <label for="open_file">Open</label>
+                        <input type="file" name="myfile" id="open_file">
+                    </li>
+                    <li><a href="#" onclick="close_file()">Close</a></li>
+                    <li><a href="#">Save</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Exit</a></li>
+                </ul>
+            </li>
+            <li>
+                <label for="drop-2" class="toggle">Edit</label>
+                <input type="radio" name="topmenu" id="drop-2">
+                <ul>
+                    <li><a href="#">Undo</a></li>
+                    <li><a href="#">Redo</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <nav id="tools">
+        <ul>
+            <li>
+                <input type="radio" name="toolbar" id="tool_1">
+                <label for="tool_1"><i class="fa fa-pencil" aria-hidden="true" title="Pencil"></i></label>
+            </li>
+            <li>
+                <input type="radio" name="toolbar" id="tool_2">
+                <label for="tool_2"><i class="fa fa-bar-chart" aria-hidden="true" title="Chart"></i></label>
+            </li>
+            <li>
+                <input type="radio" name="toolbar" id="tool_3">
+                <label for="tool_3"><i class="fa fa-arrows" aria-hidden="true" title="Move"></i></label>
+            </li>
+            <li>
+                <input type="radio" name="toolbar" id="tool_4">
+                <label for="tool_4"><i class="fa fa-cubes" aria-hidden="true" title="Cubes"></i></label>
+            </li>
+            <li>
+                <input type="radio" name="toolbar" id="tool_5">
+                <label for="tool_5"><i class="fa fa-exchange" aria-hidden="true" title="Exchange"></i></label>
+            </li>
+        </ul>
+    </nav>
+    <main id="main"><span>No file</span></main>
+    <script>setup()</script>
+</body>
+</html>

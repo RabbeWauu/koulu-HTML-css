@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+
+.head{
+  font-family: 'Oleo Script Swash Caps', cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hinnasto{
+  font-size: 20px;
+  line-height: 1.4em;
+  letter-spacing: 0em;
+  margin-bottom: 5px;
+  font-family: Questrial;
+}
+
+hr{
+  width: 100%;
+  border: 1px solid black;
+}
+
+  img{
+    width: auto;
+    height: 150px;
+  }
+
+  .foodicon-container img{
+    width: 64px;
+    height: 64px;
+  }
+
+  .foodicon-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    gap: 10px;
+  }
+
+  .lounaslista h2{
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .lounaslista h3{
+    padding-right: 55px;
+  }
+
+  .lounaslista li{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    max-inline-size: 300px;
+    padding-right: 55px;
+  }
+
+  .lounaslista{
+    background-color: orange;
+    padding: 10px;
+  }
+
+  .foodlist-list{
+    display: block;
+  }
+
+  body {
+      text-align: center;
+      background-color: lightblue;
+  }
+  table, th, td {
+    border:1px solid black;
+  }
+  ul {
+      list-style-type: none;
+  }
+  table {
+      margin-left: auto;
+      margin-right: auto;
+  }
+  h3 {
+      font-family: 'Baloo Thambi 2', cursive;
+      font-size: 24px;
+  }
+
+  #aukiolo{
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+  }
+
+  #alkuun{
+      background-color: gray;
+      color: white;
+      width: fit-content;
+      float: right;
+      padding: 5px 5px;
+      text-decoration: none;
+  }
+
+  #alkuun a:visited{
+    color: white;
+    text-decoration: none;
+  }
+
+  #alkuun a:hover{
+    color: lightgray;
+  }
+
+  footer{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 1.8em;
+  }
+
+  .yhteystiedot{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+.yhteystiedot ul, li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.yhteystiedot p{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+.footer-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.module{
+display: block;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.footertext{
+  font-size: 16px;
+  line-height: 1.8em;
+}
+
+.ranges{
+  float: right;
+  text-align: right;
+  line-height: 1.8em;
+}

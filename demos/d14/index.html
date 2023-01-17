@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despair</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <span class="logo"><i class="fa fa-cog" aria-hidden="true"></i> Settings</span>
+        <input class="menubtn" type="radio" name="tabs" id="tab1" checked><label for="tab1">Gameplay</label>
+        <input class="menubtn" type="radio" name="tabs" id="tab2"><label for="tab2">Controls</label>
+        <input class="menubtn" type="radio" name="tabs" id="tab3"><label for="tab3">Graphics</label>
+        <input class="menubtn" type="radio" name="tabs" id="tab4"><label for="tab4">Audio</label>
+
+        <div class="tab content1">
+            <h2>Difficulty</h2>
+            <input type="radio" name="difficulty" id="easy" value="Easy">
+            <label for="easy">Akin Tunnit</label>
+            <input type="radio" name="difficulty" id="medium" value="Medium">
+            <label for="medium">Vesan Tunnit</label>
+            <input type="radio" name="difficulty" id="hard" value="Hard">
+            <label for="hard">Mika Salon Tunnit</label>
+            <div class="avatar"></div>
+        </div>
+        <div class="tab content2">
+            <h2>Keybinds</h2>
+            <table>
+                <tbody>
+                    <tr><th>Action</th><th>Key</th></tr>
+                    <tr>
+                        <td>Move Forwards</td>
+                        <td><input class="key"type="text" name="" id="" value="W" size="1" maxlength="1"></td>
+                    </tr>
+                    <tr>
+                        <td>Strafe Left</td>
+                        <td><input class="key"type="text" name="" id="" value="A" size="1" maxlength="1"></td>
+                    </tr>
+                    <tr>
+                        <td>Move Backwards</td>
+                        <td><input class="key"type="text" name="" id="" value="S" size="1" maxlength="1"></td>
+                    </tr>
+                    <tr>
+                        <td>Strafe Right</td>
+                        <td><input class="key"type="text" name="" id="" value="D" size="1" maxlength="1"></td>
+                    </tr>
+                    <tr>
+                        <td>Jump</td>
+                        <td><input class="key"type="text" name="" id="" value="Space" size="2" maxlength="5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab content3">
+            <h2>Display</h2>
+<span class="displayoption">
+                <label for="resolution">Resolution</label>
+                <select name="resolution" id="reso">
+                    <option value="1080p">1920x1080</option>
+                    <option value="720p">1280x720</option>
+                    <option value="csgo">1024x768</option>
+                </select>
+                <label for="vsync">Enable V-Sync</label>
+                <input type="checkbox" name="vsync" id="vsync">
+</span>
+        </div>
+        <div class="tab content4">
+            <h2>Volume</h2>
+            <span class="volbar">
+                <input type="range" min="-100" max="0" value="0" class="range blue"/>
+            </span>
+        </div>
+    </main>
+</body>
+</html>

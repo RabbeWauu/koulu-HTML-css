@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Harjoitus 5</title>
+</head>
+<body>
+<form action="https://tredu-form-app.herokuapp.com/varaus.php" method="post">
+<div>
+            <h1>Tee pöytävaraus</h1>
+            <label for="nimi">Nimi</label>
+            <input type="text" name="name" id="name" required placeholder="Matti Meikäläinen">
+            <label for="phone">Puhelinnumero</label>
+            <input type="tel" name="phone" id="phone" placeholder="045-123-4567">
+            <label for="email">Sähköposti</label>
+            <input type="email" name="email" id="email" placeholder="etu.sukunimi@mail.fi">
+            <label for="date">Päivämäärä</label>
+            <input type="date" name="date" id="date" required>
+            <label for="time">Aika</label>
+            <input type="time" name="time" id="time" required>
+            <label for="details">Erikoistoivomukset ja allergiat</label>
+            <textarea name="details" id="details" placeholder="Erikoistoivomukset ja allergiat"></textarea>
+            <input type="submit" value="Lähetä">
+</div>
+</form>
+</body>
+</html>

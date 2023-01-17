@@ -1,0 +1,115 @@
+:root{
+    /* blue theme */
+    --linkcolor: #56a8ff;
+    --linkcolor-hover: #3c8aff;
+    --textcolor-hover: #fff;
+    --textcolor: #c9c9c9;
+    --bgcolor: #1e1e1e;
+    --titleheight: 50px;
+    --navheight: 50px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: var(--bgcolor);
+    color: var(--textcolor);
+}
+h2{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: var(--titleheight);
+    text-align: center;
+    color: var(--textcolor);
+}
+nav{
+    background-color: var(--bgcolor);
+    color: var(--textcolor);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+nav a, nav a:visited{
+    color: var(--linkcolor);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+nav svg{
+    height: 20px;
+    stroke: var(--linkcolor);
+}
+nav a:hover{
+    color: white;
+    transition: color 0.25s ease-in-out;
+}
+nav svg:hover{
+    stroke: white;
+    transition: stroke 0.25s ease-in-out;
+}
+main h2 + div{
+    height: calc(100vh - var(--navheight) - var(--titleheight));
+    margin-top: var(--titleheight);
+    float: left;
+    overflow-y: auto;
+    padding: 1em;
+}
+p{
+    margin-top: -10px;
+}
+section{
+    display: none;
+    /* vain yhden sectionin on tarkoitus olla kerrallaan näkyvissä */
+}
+section:target{
+    display: block;
+    /* klikattaessa sectionin tulee ilmestyä näkyville */
+}
+section:target ~ #home{
+    display: none;
+    /* muiden kuin klikatun sectionin pitää olla piilossa. */
+}
+figure{
+    margin: 0 0 1em 0;
+}
+figure img{
+    max-width: 100%;
+}
+figcaption{
+    font-weight: bold;
+}
+h3{
+    padding-top: 1em;
+    margin: 20px;
+    font-size: 20px;
+}
+i{
+    float: right;
+    display: block;
+    color: gray;
+}
+iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+#leepu, #leepu:visited{
+    cursor: pointer;
+    color: var(--textcolor);
+    text-decoration: none;
+}

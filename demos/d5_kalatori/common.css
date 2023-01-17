@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: url(img/greek-vase.png);
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+h1{
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(86, 255, 162);
+    font-size: 5em;
+    text-align: center;
+    text-shadow: 2px 2px black, 0 0 5px black, 0 0 1px black;
+    margin: 0 auto;
+}
+h3{
+    text-align: center;
+}
+
+p, li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.bg-color {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 1px;
+    margin: 0 auto;
+}
+section, header{
+    min-height: 95vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+section:nth-child(odd){
+    background-color: cadetblue;
+}
+.wrapper{
+    margin: 0 auto;
+}
+form{
+    text-align: center;
+}

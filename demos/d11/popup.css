@@ -1,0 +1,31 @@
+/* CSS: popup dialog styles */
+/* Source: Dialog Element | Loughlin McSweeney | CodePen */
+
+dialog .cancel:hover{
+    cursor: pointer;
+    background-color: rgb(207, 207, 207);
+}
+dialog figure{
+    text-align: center;
+}
+dialog figure img{
+    max-height: 80vh;
+}
+dialog::backdrop {
+  background: black;
+  opacity: 0.5;
+}
+dialog {
+  max-width: 90vw;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.blur{
+  filter: blur(2px);
+}
+dialog div{
+    display: block;
+    padding: 1em;
+}

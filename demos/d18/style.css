@@ -1,0 +1,140 @@
+:root{
+    --skyblue: rgb(0,132,255);
+    --sunorange: rgb(228,154,17);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    margin: 0;
+    background-color: white;
+}
+nav{
+    background-color: var(--skyblue);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 60px;
+    z-index: 999999;
+}
+nav img{
+    height: 60px;
+    padding: 0.5em;
+}
+nav ul{
+    display: flex;
+    gap: 1em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a, nav ul li a:visited{
+    padding: .5em 1em;
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: var(--sunorange);
+}
+nav img:hover{
+    filter: brightness(1.2);
+}
+header{
+    background-image: url('img/snow.jpg');
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: right;
+    margin-top: 60px;
+}
+#sand_img{
+    display: block;
+    max-width: 100%;
+    clip-path: polygon(61% 0, 100% 0, 100% 100%, 41% 100%);
+}
+.slogan{
+    position: absolute;
+    z-index: 999;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+    padding: 2em;
+    top: 2em;
+    left: 1em;
+    color: var(--sunorange);
+}
+#pointer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    user-select: none;
+}
+.slogan i{
+    color: var(--skyblue);
+    font-size: 1em;
+    display: block;
+}
+.slogan span{
+    font-size: 2em;
+    font-weight: bold;
+    filter: brightness(1.1)
+}
+main{
+    margin: 120px auto;
+    max-width: 900px;
+}
+header + main{
+    margin-top: 60px;
+}
+
+#figure_gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1;
+}
+svg{
+    max-width: 2em;
+}
+#figure_gallery figure{
+    max-width: 350px;
+    padding: 1em;
+    position: relative;
+    box-shadow: -2px 1px 5px 0px rgba(0,0,0,0.6);
+    -webkit-box-shadow: -2px 1px 5px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: -2px 1px 5px 0px rgba(0,0,0,0.6);
+}
+#figure_gallery figure img{
+    max-width: 100%;
+}
+.star-ratings{
+    position: absolute;
+    width: 100%;
+    right: 1.2em;
+    color: yellow;
+    text-align: right;
+}
+.pricetag{
+    background-color: crimson;
+    color: white;
+    position: absolute;
+    margin-top: 0.25em;
+    padding: 0.25em 0.25em;
+    right: 0.5em;
+    clip-path: polygon(93% 0, 100% 50%, 93% 100%, 3% 100%, 0 50%, 3% 0);
+}
+main a, main a:visited{
+    color: var(--skyblue);
+    text-decoration: none;
+}
+.pricetag:hover{
+    text-decoration: underline;
+}

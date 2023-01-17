@@ -1,0 +1,38 @@
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+
+.split_three {
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.split_three div {
+    flex-grow: 1;
+}
+
+.split_three div:nth-child(1){
+    flex: 2;
+}
+
+.split_three div:nth-child(2){
+    flex: 1;
+}
+
+.map-img{
+    max-width: 100%;
+    min-width: 70vw;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+
+table tr td {
+    border: solid thin black;
+}
+
+.varattu {
+    background-color: crimson;
+}

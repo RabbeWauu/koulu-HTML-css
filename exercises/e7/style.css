@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+
+:root{
+    --mainfont: ('Baloo 2', cursive);
+    --bgcolor-main: #1e1e1e;
+    --bgcolor-secondary: #2e2e2e;
+    --textcolor: #fff;
+    --linkcolor: rgb(155, 155, 155);
+    --linkcolor-hover: rgb(204, 201, 201);
+    --linkcolor-active: #fff;
+}
+
+body{
+    background-color: var(--bgcolor-main);
+    font-family: 'Baloo 2', cursive;
+    margin: 0;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+figcaption{
+    color: var(--textcolor);
+}
+figcaption span{
+    float: right;
+    background-color: var(--bgcolor-secondary);
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+figcaption span:hover{
+    cursor: pointer;
+    background-color: #3e3e3e;
+}
+figcaption b{
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: var(--linkcolor-active);
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: var(--bgcolor-secondary);
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav a{
+    padding: 5px;
+    color: var(--linkcolor);
+    text-decoration: none;
+}
+nav a:hover{
+    color: var(--linkcolor-hover);
+}
+nav a:visited a:hover{
+     color: var(--textcolor); 
+     /*en muuta tässä linkkien väriä koska se ei sovi mielestäni peliverkkokaupan navigaatiopalkkiin */
+}
+.active{
+    color: var(--linkcolor-active);
+    pointer-events: none;
+}

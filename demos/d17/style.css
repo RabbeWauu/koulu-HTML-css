@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Oriya&family=Yeseva+One&display=swap');
+
+:root{
+    --maincolor: orange;
+    --textcolor: white;
+    --bgcolor: #2e2e2e;
+    /* --header-font: (font-family: 'Yeseva One', cursive);
+    --text-font: (font-family: 'Noto Serif Oriya', serif); */
+}
+
+@media screen and (max-width: 600px) {
+    #logo b{
+        display: none;
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bgcolor);
+    margin: 0;
+}
+header{
+    background-color: #4e4e4e;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+#logo{
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+    font-family: 'Yeseva One', cursive;
+}
+#logo:hover{
+    color: var(--maincolor);
+    transition: color .25s ease-in-out;
+}
+#search svg{
+    stroke: white;
+}
+#search svg:hover{
+    stroke: var(--maincolor);
+    transition: stroke .25s ease-in-out;
+}
+#search_field{
+    border: 3.5px solid var(--maincolor);
+    border-radius: 4px;
+    padding: 0.5em;
+    color: white;
+    background-color: inherit;
+}
+header svg{
+    height: 2em;
+}
+header, header a, header div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+summary::before{
+    content: '\2261';
+    font-size: 2.5em;
+    padding-right: 0.5em;
+}
+summary{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+summary:hover{
+    transition: color .25s ease-in-out;
+    color: var(--maincolor);
+}
+#menu nav{
+    position: fixed;
+    right: 0;
+    top: 50px;
+    background-color: #4e4e4e;
+}
+#menu nav a, #menu nav a:visited{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 0.5em;
+}
+#menu nav a:hover{
+    background-color: #3e3e3e;
+}
+#menu[open] > summary::before {
+    content: '\00D7';
+}
+h1{
+    font-family: 'Yeseva One', cursive;
+    color: white;
+    text-align: center;
+}
+main{
+    margin-top: 50px;
+}
+.cake-gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    max-width: 1920px;
+}
+.cake-gallery figure{
+    max-width: 300px;
+    max-height: 235px;
+    margin: 0;
+    padding: 0.5em;
+    position: relative;
+}
+.cake-gallery figcaption{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 0.5em 0 0.5em 0;
+    background-color: var(--maincolor);
+    color: white;
+    text-align: center;
+}
+.animated_thumb{
+    overflow: hidden;
+}
+.cake-gallery img, .animated_thumb{
+    width: 100%;
+    height: calc(100% - 34px);
+    object-fit: cover;
+    transition: 0.1s all ease-in-out;
+}

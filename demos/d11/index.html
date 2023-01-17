@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaatekauppa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js"></script>
+</head>
+<body>
+<main>
+        <header>
+            <h1>Vaatekauppa</h1>
+            <h2>Stock kuvia vaatteista jo vuodesta 2022</h2>
+        </header>
+        <hr>
+        <div class="outer">
+            <div class="shop-item">
+                <img src="img/t-shirt.jpg" alt="t-paita">
+                <p>T-Paita (Punainen)</p>
+                <span class="sale-price"><del>9.99€</del> 7,99€</span>
+                <br>
+                <button>Osta</button>
+            </div>
+            <dialog>
+                <figure>
+                    <img src="img/t-shirt-large.jpg" alt="">
+                    <figcaption>T-Paita (Punainen)</figcaption>
+                    <button class="close add">Lisää ostoskoriin</button>
+                    <button class="close cancel">Peruuta</button>
+                </figure>
+            </dialog>
+            
+            <div class="shop-item">
+                <img src="img/trousers.jpg" alt="housut">
+                <p>Housut (Sininen)</p>
+                <span class="price">29,99€</span><br>
+                <button>Osta</button>
+            </div>
+            <dialog>
+                <figure>
+                    <img src="img/trousers.jpg" alt="">
+                    <figcaption>Housut (Sininen)</figcaption>
+                    <button class="close add">Lisää ostoskoriin</button>
+                    <button class="close cancel">Peruuta</button>
+                </figure>
+            </dialog>
+            <div class="shop-item">
+                <img src="img/suit.jpg" alt="puvuntakki">
+                <p>Puvuntakki (Musta)</p>
+                <span class="price">99,99 €</span><br>
+                <button>Osta</button>
+            </div>
+            <dialog>
+                <figure>
+                    <img src="img/suit.jpg" alt="">
+                    <figcaption>Puvuntakki (Musta)</figcaption>
+                    <button class="close add">Lisää ostoskoriin</button>
+                    <button class="close cancel">Peruuta</button>
+                </figure>
+            </dialog>
+            <div class="shop-item">
+                <img src="img/gloves.jpg" alt="sormikkaat">
+                <p>Sormikkaat (Violetit)</p>
+                <span class="price">10,-€</span><br>
+                <button>Osta</button>
+            </div>
+            <dialog>
+                <figure>
+                    <img src="img/gloves.jpg" alt="">
+                    <figcaption>Sormikkaat (Violetit)</figcaption>
+                    <button class="close add">Lisää ostoskoriin</button>
+                    <button class="close cancel">Peruuta</button>
+                </figure>
+            </dialog>
+        </div>
+</main>
+<footer>Vaatekauppa 2022</footer>
+<script>setup_popup()</script>
+</body>
+</html>

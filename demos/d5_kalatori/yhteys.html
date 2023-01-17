@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yhteys</title>
+</head>
+<body>
+    <section id="yhteys">
+        <h3>Myyntipöydän varaus</h3>
+        <form action="https://tredu-form-app.herokuapp.com/lomakedemo.php" method="post">
+            <p>Toripäivä</p>
+                <input type="date" name="date" id="date" required>
+            <p>Pöydän tunnus</p>
+                <input type="text" name="tableid" id="table" required placeholder="esim-A1">
+            <p>Varaajan nimi</p>
+                <input type="text" name="fullname" id="fullname" required placeholder="Etunimi Sukunimi">
+            <p>Sähköposti</p>
+                <input type="email" name="email" id="email" required placeholder="etu.sukunimi@mail.com">
+            <p>Viesti</p>
+            <input type="text" name="message" id="message" placeholder="Valinnainen viesti">
+            <br><br>
+            <input type="submit" value="Lähetä">
+        </form>
+    </section>
+</body>
+</html>

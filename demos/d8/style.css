@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+}
+
+nav a, a:visited{
+    text-decoration: none;
+    color: red;
+}
+
+a:hover{
+    color: white;
+}
+
+.active{
+    text-decoration: underline;
+}
+
+.navigation{
+    font-family: Arial;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(34, 33, 33);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.navigation li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    float: right;
+    padding: 10px;
+}
